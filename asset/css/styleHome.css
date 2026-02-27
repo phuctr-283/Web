@@ -1,0 +1,436 @@
+*{
+    box-sizing:border-box;
+}
+html{
+    font-size:62.5%;
+}
+body{
+    padding-top:80px;
+    font-size:1.6 rem;
+    font-family:"Sora",sans-serif;
+    background: linear-gradient(135deg, #fffaf0 0%, #ffe6e6 50%, #e6f3ff 100%);
+    background-attachment: fixed;
+}
+/*==============================common==================================*/
+.container{
+    width:1170px;
+    max-width: calc(100% - 48px);
+    margin:0 auto;
+}
+a{
+    text-decoration: none;
+}
+.btn{
+    display:inline-block;
+    min-width:205px;
+    line-height:60px;
+    background:#dc143c;
+    color:#fff;
+    text-align:center;
+    font-size:1.8rem;
+    font-style:normal;
+    font-weight:400;
+    border-radius:999px;
+}
+.btn:hover{
+    opacity:0.9;
+}
+.section_heading{
+    color:#dc143c;
+    font-size:5rem;
+    font-weight:600;
+    line-height:1.2;
+    letter-spacing:-1px;
+    border-bottom:5px solid #ff0;
+    font-family:serif;
+}
+.section_desc{
+    margin-top:18px;
+    color:#10375c;
+    font-size:1.8rem;
+    font-weight:300;
+    line-height:1.67;
+}
+/*=============================header==================================*/
+.header{
+    background:#dc143c;
+    min-height:120px;
+    padding-top:20px;
+    position: fixed;
+     top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.header-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.navbar_list{
+    display:flex;
+}
+.navbar_link{
+    padding:8px 21px;
+    color:#c9d2da;
+    font-size:1.6rem;
+    font-style:normal;
+    font-weight:300;
+    line-height:1.75;
+}
+.navbar_link:hover,
+.navbar_link--active{
+    text-shadow: 1px  0 0 currentColor;
+    color:#fff;
+}
+.navbar_link--active::before{
+    content:"";
+    display:inline-block;
+    width:6px;
+    height:6px;
+    border-radius:50%;
+    background: #fff;
+    top:-3px;
+    position:relative;
+    right: 8px;
+}
+.logo{
+    width:90px;
+    height:90px;
+}
+.logo_images{
+    display: flex;
+    align-items:center;
+}
+.text{
+    display:flex;
+    flex-direction:column;
+    color:#fff;
+}
+.logo_text{
+    font-size:5rem;
+    font-weight:bold;
+}
+.logo_text_secondary{
+    font-size:2.5rem;
+}
+/*==============hero===============*/
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    text-align:center;
+    flex-direction:column;
+    padding-top:76px;
+    background-image:url("../../img/saiGon.png");
+    min-height:100vh;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:50% 50%;
+    background-attachment:fixed;
+    position:relative;
+}
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.6);
+    z-index:0
+}
+.hero .container{
+    z-index:1
+}
+.hero_heading{
+    margin-top:150px;
+    color:#fff;
+    font-size:10rem;
+    font_style:normal;
+    font-weight:700;
+    line-height:1.14;
+    letter-spacing:1.4px;
+}
+.hero_desc{
+    color:#fff;
+    font-size:4.5rem;
+    font_style:normal;
+    font-weight:500;
+    line-height:1.14;
+    letter-spacing:2px;
+    margin-top:20px;
+}
+.btn_hero{
+    margin-top:50px;
+}
+/*=====================introduce======================*/
+.introduce_short{
+    margin-top:50px;
+
+}
+.intro_content{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+}
+.intro .section_heading{
+    font-size:4.3rem;
+    width:770px;
+}
+.intro .section_desc{
+    padding-right:50px;
+}
+.intro_img{    
+    width:700px;
+    height:300px;
+    border-radius:5px;
+}
+/*=====================featured=========================*/
+.featured {
+    background:#fff;
+    padding:100px 0;
+}
+.featured .section_heading{
+    text-align:center;
+}
+.featured_list{
+    margin-top:86px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    column-gap:30px;
+}
+.featured-item{
+    border-radius:20px;
+    background:#fff;
+    border:10px solid #ff0;
+    text-align:center;
+    height:500px;
+    display:flex;
+    flex-direction:column;
+}
+.featured-item:hover{
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    transform:translateY(-16px);
+}
+.featured-item_img{
+    width:100%;
+    height:60%;
+    border-radius:10px 10px 0 0;
+    object-fit:cover
+}
+.featured-item_heading{
+    margin-top:10px;
+    color:#10375c;
+    font-size:2.8rem;
+    font-weight:bold;
+    line-height:1.28;
+}
+.featured-item_desc{
+    margin-top:5px;
+    color:#10375c;
+    font-size:1.4rem;
+    font-weight:300;
+    line-height:1.75;
+    flex:1;
+}
+.featured-item_more{
+    margin: auto 20px 20px 20px;
+}
+/*==================quote================*/
+.quote{
+    margin-top:78px;
+}
+.quote_content{
+    background:#fff;
+    height:100px;
+    border:1px solid #000;
+    border-radius:20px;
+    text-align:center;
+}
+.quote_heading{
+    margin:15px 10px 0 10px;
+    font-size:2rem;
+    font-weight:700;
+    line-height:1.48;
+
+}
+.quote_desc{
+    font-size:1.4rem;
+    font-weight:300;
+    line-height:1.14;
+}
+/*===========================footer=========================*/
+.footer{
+    background:#dc143c;
+    margin-top: 50px;
+    text-align: center;
+}
+.footer_copyright-text {
+  padding: 28px 0 20px;
+  color: #fff;
+  font-size: 1.7rem;
+  line-height: 1.86;
+}
+/*=============================responsive=====================*/
+@media(max-width:991.98px){
+    .navbar{
+        display:none;
+    }
+    .header-top{
+        display:flex;
+        justify-content:center;  /* căn giữa logo */
+        align-items:center;
+        position:relative;
+    }
+    .logo_images{
+        position:static;
+    }
+    .header-top .logo_images{
+        margin-left:-80px;
+    }
+    .menu-header_icon{
+        position: absolute;
+        top: 38px;
+        right: 26px;
+        color: #fff;
+        width: 24px;
+    }
+    .menu-overplay{
+        position:fixed;
+        background:rgba(0,0,0,0.3);
+        inset:0;
+        z-index:1;
+        opacity:0;
+        visibility:hidden;;
+        transition:0.5s
+    }
+    .menu-checkbox:checked ~ .menu-overplay{
+        opacity:1;
+        visibility:visible;
+    }
+    .menu-drawer{
+        position: fixed;
+        background: #1c0f13;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 80%;              /* 100% - 20% */
+        z-index: 2;
+        transform: translateX(100%);  /* Ẩn sang phải */
+        transition: 0.5s;
+
+    padding: 60px;
+    box-shadow: -4px 0 20px rgba(0,0,0,0.4);
+    }
+    .menu-checkbox:checked ~ .menu-drawer{
+        transform:translateX(0);
+    }
+    .close_menu{
+        width:24px;
+        color:#fff;
+    }
+    .menu-drawer_top{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+    .navbar_list{
+        margin-top:25px;
+        flex-direction:column;
+    }
+    #navbar_list--mobile{
+        margin-top:25px;
+    }
+    .navbar_link{
+        display:block;
+        font-size:2rem;
+    }
+    .navbar_link:hover{
+        background-color:#ff27;
+    }
+    /* ===== HERO ===== */
+    .hero{
+        background-attachment: scroll; /* tránh lag mobile */
+        padding: 120px 20px 60px;
+        min-height: auto;
+    }
+
+    .hero_heading{
+        font-size: 5rem;
+        margin-top: 60px;
+    }
+
+    .hero_desc{
+        font-size: 2rem;
+    }
+
+    .btn_hero{
+        margin-top: 30px;
+    }
+
+    /* ===== INTRODUCE ===== */
+    .intro_content{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro .section_heading{
+        width: 100%;
+        font-size: 3rem;
+    }
+
+    .intro .section_desc{
+        padding-right: 0;
+    }
+
+    .intro_img{
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    /* ===== FEATURED ===== */
+    .featured{
+        padding: 60px 20px;
+    }
+
+    .featured_list{
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+
+    .featured-item{
+        height: auto;
+    }
+
+    .featured-item_img{
+        height: 200px;
+    }
+
+    /* ===== QUOTE ===== */
+    .quote_content{
+        height: auto;
+        padding: 20px;
+    }
+
+    .quote_heading{
+        font-size: 1.6rem;
+    }
+    /* ================= FOOTER ================= */
+    .footer_copyright-text{
+        font-size:1.4rem;
+    }
+    /* ===== SECTION HEADING CHUNG ===== */
+    .section_heading{
+        font-size: 3.2rem;
+        text-align: center;
+    }
+    .section_desc{
+        font-size:1.6rem;
+    }
+
+}
+@media(min-width:992px){
+    .mobile-header{
+        display:none;
+    }
+}
