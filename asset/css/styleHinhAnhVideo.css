@@ -15,7 +15,7 @@ body{
 /*==============================common==================================*/
 .container{
     width:100%;
-    max-width: calc(100% - 300px);
+    max-width: calc(100% - 48px);
     margin:0 auto;
 }
 a{
@@ -113,7 +113,7 @@ a{
     background-repeat:no-repeat;
     background-size:cover;
     background-position:50% 50%;
-    background-attachment:fixed;
+    background-attachment:scroll;
     position:relative;
 }
 .hero::before{
@@ -431,7 +431,8 @@ a{
     }
 
     .video_wrapper.video_wrapper--video{
-        width:100%;
+        max-width:100%;
+        height:auto;
         padding-top:0;
     }
 
@@ -454,5 +455,8 @@ a{
 @media(min-width:992px){
     .mobile-header{
         display:none;
+    }
+    .container{
+        max-width:calc(100% - 300px);
     }
 }
