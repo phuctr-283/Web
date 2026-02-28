@@ -349,8 +349,8 @@ a{
     .hero{
         background-attachment: scroll; /* tránh lag mobile */
         padding: 120px 20px 60px;
-        min-height: auto;
-        background-size:contain;
+        min-height:auto;
+        max-height:50vh;
     }
 
     .hero_heading{
@@ -461,4 +461,5 @@ a{
     }
     
     
+
 }
