@@ -281,9 +281,6 @@ a{
     .logo_images{
         position:static;
     }
-    .header-top .logo_images{
-        margin-left:-80px;
-    }
     .menu-header_icon{
         position: absolute;
         top: 38px;
@@ -314,9 +311,8 @@ a{
         z-index: 2;
         transform: translateX(100%);  /* Ẩn sang phải */
         transition: 0.5s;
-
-    padding: 60px;
-    box-shadow: -4px 0 20px rgba(0,0,0,0.4);
+        padding: 60px;
+        box-shadow: -4px 0 20px rgba(0,0,0,0.4);
     }
     .menu-checkbox:checked ~ .menu-drawer{
         transform:translateX(0);
@@ -457,6 +453,7 @@ a{
         display:none;
     }
     .container{
-        max-width:calc(100% - 300px);
+        width:1170px;
+        max-width:calc(100% - 48px);
     }
 }
