@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/reset/reset.css">
+    <link rel="stylesheet" href="./asset/css/styleAmThuc.css">
+    <title>Ẩm thực</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <a class="logo_images" href="./index.html">
+                    <img src="./img/hoaMai.png" alt="hoa-mai" class="logo"> 
+                    <div class="text">
+                        <span class="logo_text">Tết</span>
+                        <span class="logo_text_secondary">đến rồi</span>
+                    </div>
+                </a>
+                <nav class="navbar">
+                    <ul class="navbar_list" id="navbar_list--pc">
+                        <li class="navbar_item"><a href="./index.html" class="navbar_link ">Trang chủ</a></li>
+                        <li class="navbar_item"><a href="./queHuong.html" class="navbar_link">Quê hương</a></li>
+                        <li class="navbar_item"><a href="./phongTuc.html" class="navbar_link">Phong tục</a></li>
+                        <li class="navbar_item"><a href="./amThuc.html" class="navbar_link navbar_link--active">Ẩm thực</a></li>
+                        <li class="navbar_item"><a href="./vanHoa.html" class="navbar_link">Văn hóa</a></li>
+                        <li class="navbar_item"><a href="./hinhAnhVideo.html" class="navbar_link">Ảnh & Video</a></li>
+                        <li class="navbar_item"><a href="./kyUc.html" class="navbar_link">Ký ức</a></li>
+                        <li class="navbar_item"><a href="./lienHe.html" class="navbar_link">Liên hệ</a></li>
+                    </ul>
+                </nav>
+            </div>          
+        </div>
+        <div class="mobile-header">
+            <input type="checkbox" name="menu-checkbox" id="menu-checkbox" class="menu-checkbox" hidden>
+            <label for="menu-checkbox">
+                <svg class="menu-header_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" >
+                    <path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+            </label>
+            <label for="menu-checkbox" class="menu-overplay"></label>
+            <div class="menu-drawer">
+                <div class="menu-drawer_top">
+                    <a class="logo_images" href="./index.html">
+                        <img src="./img/hoaMai.png" alt="hoa-mai" class="logo"> 
+                        <div class="text">
+                            <span class="logo_text">Tết</span>
+                            <span class="logo_text_secondary">đến rồi</span>
+                        </div>
+                    </a>
+                    <label for="menu-checkbox">
+                        <svg class="close_menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path fill="currentColor" d="M55.1 73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L147.2 256 9.9 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192.5 301.3 329.9 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.8 256 375.1 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192.5 210.7 55.1 73.4z"/></svg>
+                    </label>
+                </div>
+                <ul id="navbar_list--mobile"></ul>
+                <script>
+                    const navPC=document.querySelector("#navbar_list--pc");
+                    const navMobile=document.querySelector("#navbar_list--mobile");
+                    navMobile.innerHTML=navPC.innerHTML;
+                </script>
+            </div>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero_heading"> Sài Gòn</h1>
+            <h1 class="hero_content">Ẩm thực Tết phong phú, đậm đà hương vị, không chỉ mang đến những món ăn ngon mà còn chứa đựng ý nghĩa sâu sắc về sự sum vầy, may mắn và thịnh vượng trong năm mới.</h1>
+            <p class="hero_desc">Xuân Sài Gòn - Nét xưa còn mãi, sắc mới thêm tươi</p>
+        </div>
+    </section>
+    <main>
+        <section class="introduce">
+            <div class="container">
+                <h1 class="section_heading">Ẩm Thực Tết Đặc Trưng ở Sài Gòn</h1>
+                <p class="section_desc">Vào dịp Tết, không khí Sài Gòn trở nên náo nhiệt và tràn ngập hương vị của những món ăn truyền thống. Các gia đình thường chuẩn bị những món ăn mặn đầy đặn, kết hợp giữa thịt, đậu, hạt và các nguyên liệu dễ bảo quản, mang ý nghĩa về sự sung túc, đủ đầy. Những món ăn này không chỉ ngon mà còn thể hiện sự kính trọng tổ tiên và mong ước một năm mới an lành, thịnh vượng. Ngoài ra, các món ăn kèm với vị chua, cay, mặn giúp cân bằng hương vị, tạo nên sự phong phú cho bữa cơm ngày Tết. Những món tráng miệng ngọt ngào như chè, mứt cũng là phần không thể thiếu, mang đến không khí tươi vui và đầm ấm. Tất cả những món ăn này đều góp phần tạo nên bức tranh ẩm thực Tết phong phú, đầy sắc màu và ý nghĩa.</p>
+            </div>
+        </section>
+        <section class="food">
+            <div class="container">
+                <h1 class="section_heading">Món ăn đặc trưng</h1>
+                <div class="food_list">
+                    <section class="food-item food-item--left">
+                        <img src="./img/banhTeT_AmThuc.png" alt="banh-tet-am-thuc" class="food-item_img">
+                        <div class="food-item_content">
+                            <h3 class="food-item_heading">Bánh Tét</h3>
+                            <p class="food-item_desc">
+                                Bánh Tét là món ăn không thể thiếu trong dịp Tết của người Sài Gòn, đặc biệt trong mâm cỗ ngày Tết Nguyên Đán. Bánh có hình trụ dài, được gói bằng lá chuối xanh, nhân gồm đậu xanh, thịt mỡ và được nấu chín mềm trong nước sôi. Món ăn này mang ý nghĩa sự gắn kết giữa trời và đất, đồng thời thể hiện ước mong về sự thịnh vượng và bình an trong năm mới. Bánh Tét thường được ăn kèm với thịt kho hột vịt, dưa hành hoặc củ kiệu, tạo nên một hương vị đặc trưng mà chỉ có trong ngày Tết.
+                            </p>
+                        </div>
+                    </section>
+                    <section class="food-item food-item--right">
+                        <img src="./img/thitKhoHotVit.png" alt="thit-kho-hot-vit" class="food-item_img">
+                        <div class="food-item_content">
+                            <h3 class="food-item_heading">Thịt kho hột vịt</h3>
+                            <p class="food-item_desc">
+                                Thịt kho hột vịt là món ăn đặc trưng không thể thiếu trong mâm cơm Tết của người Sài Gòn. Thịt ba chỉ được kho mềm trong nước dừa, gia vị đậm đà, ăn kèm với những quả hột vịt luộc. Món ăn này mang ý nghĩa chúc phúc cho gia đình, thể hiện sự sung túc, đủ đầy và sự sum vầy trong ngày Tết. Thịt kho hột vịt thường được ăn kèm với bánh Tét hoặc cơm trắng, tạo nên sự kết hợp hoàn hảo giữa các món ăn trong bữa cơm ngày Tết.
+                            </p>
+                        </div>
+                    </section>
+                    <section class="food-item food-item--left">
+                        <img src="./img/canhKhoQua.png" alt="canh-kho-qua-nhoi-thit" class="food-item_img">
+                        <div class="food-item_content">
+                            <h3 class="food-item_heading">Canh khổ qua nhồi thị</h3>
+                            <p class="food-item_desc">
+                                Canh khổ qua nhồi thịt là món ăn không thể thiếu trong những ngày Tết ở Sài Gòn, mang ý nghĩa cầu mong những khó khăn, gian khổ sẽ qua đi trong năm mới. Mướp đắng (khổ qua) được nhồi với thịt heo xay, nấm mèo và gia vị, sau đó nấu trong nước dùng thanh mát. Hương vị của món canh này vừa đắng vừa ngọt, tượng trưng cho sự vượt qua thử thách và hy vọng vào một năm mới an lành, suôn sẻ. Canh khổ qua thường được ăn kèm với cơm trắng, rất thích hợp để thanh lọc cơ thể sau những bữa ăn nhiều dầu mỡ trong dịp Tết.
+                            </p>
+                        </div>
+                    </section>
+                    <section class="food-item food-item--right">
+                        <img src="./img/duaHanhCuKieu.png" alt="dua-hanh-cu-kieu" class="food-item_img">
+                        <div class="food-item_content">
+                            <h3 class="food-item_heading">Dưa hành và củ kiệu</h3>
+                            <p class="food-item_desc">
+                                Dưa hành và củ kiệu là những món ăn kèm không thể thiếu trong mâm cỗ Tết miền Nam. Dưa hành được muối chua, có vị cay nhẹ và giòn, giúp làm tăng thêm hương vị cho các món ăn mặn như thịt kho, bánh Tét. Củ kiệu cũng được muối chua, có vị giòn ngọt và thanh mát, rất thích hợp để ăn kèm với các món đậm đà trong dịp Tết. Những món dưa này không chỉ giúp cân bằng khẩu vị mà còn mang ý nghĩa chúc Tết, thể hiện sự hiếu khách và tấm lòng của gia chủ đối với khách đến thăm.
+                            </p>
+                        </div>
+                    </section>
+                    <section class="food-item food-item--left">
+                        <img src="./img/xoiGac.png" alt="xoi-gac" class="food-item_img">
+                        <div class="food-item_content">
+                            <h3 class="food-item_heading">Xôi gấc</h3>
+                            <p class="food-item_desc">
+                                Xôi gấc là món xôi truyền thống trong dịp Tết của người Sài Gòn, thường được dùng vào các buổi sáng đầu năm mới. Xôi gấc có màu đỏ tươi, tượng trưng cho sự may mắn và thịnh vượng trong năm mới. Gạo nếp được nấu với nước gấc và dừa nạo, tạo nên hương vị ngọt ngào, dẻo mềm. Món xôi này thường được ăn kèm với thịt kho, chả lụa hoặc muối vừng, mang đến một bữa sáng đầy đủ và ấm cúng cho gia đình. Đặc biệt, màu đỏ của xôi còn là biểu tượng của sự tài lộc và thành công.
+                            </p>
+                        </div>
+                    </section>
+                    <section class="food-item food-item--right">
+                        <img src="./img/mutTet.png" alt="mut-Tet" class="food-item_img">
+                        <div class="food-item_content">
+                            <h3 class="food-item_heading">Mứt Tết</h3>
+                            <p class="food-item_desc">
+                                Mứt Tết là món ăn không thể thiếu trong mỗi gia đình Sài Gòn vào dịp Tết Nguyên Đán. Mứt được làm từ nhiều loại trái cây như dừa, bí, cà rốt, gừng, và dâu tây, qua các công đoạn chế biến thủ công tỉ mỉ, mang đến những hương vị ngọt ngào, thơm ngon. Các loại mứt Tết thường có màu sắc bắt mắt, không chỉ dùng để đãi khách mà còn là món ăn vặt trong những ngày Tết. Mứt Tết cũng mang ý nghĩa chúc cho một năm mới ngọt ngào, may mắn và đầy đủ. Mỗi miếng mứt như một lời chúc Tết gửi đến gia đình và bạn bè.
+                            </p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <section class="quote">
+            <div class="container">
+                <div class="quote_content">
+                    <p class="quote_title">Ẩm thực Tết Sài Gòn không chỉ là những món ăn ngon mà còn là sự kết nối, chia sẻ yêu thương, và ước mong một năm mới thịnh vượng, an lành.</p>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="footer_copyright">
+                <p class="footer_copyright-text">© 2026 Tết Sài Gòn | Làm bởi Nguyễn Trọng Phúc </p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

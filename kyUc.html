@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/reset/reset.css">
+    <link rel="stylesheet" href="./asset/css/styleKyUc.css">
+    <title>Ký ức</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <a class="logo_images" href="./index.html">
+                    <img src="./img/hoaMai.png" alt="hoa-mai" class="logo"> 
+                    <div class="text">
+                        <span class="logo_text">Tết</span>
+                        <span class="logo_text_secondary">đến rồi</span>
+                    </div>
+                </a>
+                <nav class="navbar">
+                    <ul class="navbar_list" id="navbar_list--pc">
+                        <li class="navbar_item"><a href="./index.html" class="navbar_link ">Trang chủ</a></li>
+                        <li class="navbar_item"><a href="./queHuong.html" class="navbar_link">Quê hương</a></li>
+                        <li class="navbar_item"><a href="./phongTuc.html" class="navbar_link">Phong tục</a></li>
+                        <li class="navbar_item"><a href="./amThuc.html" class="navbar_link">Ẩm thực</a></li>
+                        <li class="navbar_item"><a href="./vanHoa.html" class="navbar_link">Văn hóa</a></li>
+                        <li class="navbar_item"><a href="./hinhAnhVideo.html" class="navbar_link">Ảnh & Video</a></li>
+                        <li class="navbar_item"><a href="./kyUc.html" class="navbar_link navbar_link--active">Ký ức</a></li>
+                        <li class="navbar_item"><a href="./lienHe.html" class="navbar_link">Liên hệ</a></li>
+                    </ul>
+                </nav>
+            </div>        
+        </div>
+        <div class="mobile-header">
+            <input type="checkbox" name="menu-checkbox" id="menu-checkbox" class="menu-checkbox" hidden>
+            <label for="menu-checkbox">
+                <svg class="menu-header_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" >
+                    <path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+            </label>
+            <label for="menu-checkbox" class="menu-overplay"></label>
+            <div class="menu-drawer">
+                <div class="menu-drawer_top">
+                    <a class="logo_images" href="./index.html">
+                        <img src="./img/hoaMai.png" alt="hoa-mai" class="logo"> 
+                        <div class="text">
+                            <span class="logo_text">Tết</span>
+                            <span class="logo_text_secondary">đến rồi</span>
+                        </div>
+                    </a>
+                    <label for="menu-checkbox">
+                        <svg class="close_menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path fill="currentColor" d="M55.1 73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L147.2 256 9.9 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192.5 301.3 329.9 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.8 256 375.1 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192.5 210.7 55.1 73.4z"/></svg>
+                    </label>
+                </div>
+                <ul id="navbar_list--mobile"></ul>
+                <script>
+                    const navPC=document.querySelector("#navbar_list--pc");
+                    const navMobile=document.querySelector("#navbar_list--mobile");
+                    navMobile.innerHTML=navPC.innerHTML;
+                </script>
+            </div>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero_heading"> Sài Gòn</h1>
+            <h1 class="hero_content">Những ngày giáp Tết, mùi khói bếp quyện trong gió lạnh, tiếng cười rộn ràng bên mâm cơm sum họp và sắc mai vàng trước hiên nhà cứ lặng lẽ neo lại trong tim mỗi khi xuân về</h1>
+            <p class="hero_desc">Xuân Sài Gòn - Nét xưa còn mãi, sắc mới thêm tươi</p>
+        </div>
+    </section>
+    <main>
+        <section class="story-memory">
+            <div class="container">
+                <h1 class="section_heading">
+                    Câu chuyện - kí ức
+                </h1>
+                <section class="memory">
+                    <img src="./img/tetXua.png" alt="ki-uc" class="memory_img">
+                    <div class="memory_content">
+                        <h3 class="memory_title">Kí ức về tết</h3>
+                        <p class="memory_desc">Khi còn nhỏ, mỗi độ Tết về, chúng ta chỉ hồn nhiên mong được mặc áo mới, nhận lì xì và rong chơi khắp xóm, đâu từng nghĩ nhiều đến ý nghĩa của hai chữ sum họp, cũng chưa biết trân trọng hết những phút giây ngồi cạnh ông bà nghe kể chuyện xuân xưa. Khi lớn lên, qua những va vấp và trưởng thành, ta dần hiểu hơn về triết lý nhân sinh, về giá trị của gia đình và nhận ra rằng điều quý giá nhất của Tết không nằm ở mâm cao cỗ đầy, mà ở khoảnh khắc đủ đầy yêu thương. Thế nhưng Tết của hiện tại đã khác: nhịp sống hiện đại khiến những cuộc đoàn viên thưa dần, ông bà không còn kề bên để ta ríu rít chúc tuổi, không khí xuân vẫn đến với mai đào rực rỡ nhưng dường như không còn nhộn nhịp như những ngày xưa cũ còn vẹn nguyên trong tim.</p>
+                    </div>
+                </section>
+                <section class="story">
+                    <img src="./img/thonXom.png" alt="cau-chuyen" class="story_img">
+                    <div class="story_content">
+                        <h3 class="story_title">Câu chuyện về Tết</h3>
+                        <p class="story_desc">
+                            Tết xưa trong tôi là những buổi sáng mùng 1 rộn ràng tiếng cười, khi cả đại gia đình sum họp đông đủ bên ông bà, cô chú. Căn nhà như chật hơn vì tiếng nói, tiếng chúc Tết và những ván lô tô đầy háo hức; tôi khi ấy chỉ biết cười thật tươi, tay ôm xấp lì xì đỏ thắm, lòng ngập tràn niềm vui vô tư.
+                            Rồi mùng 2, tôi theo ba mẹ về quê ngoại ở Bình Thuận – nơi có hai người ông bà luôn dang tay đón tôi bằng ánh mắt hiền từ và nụ cười ấm áp. Mỗi lần tôi về, các dì, các bác cũng tụ họp đông đủ, căn nhà nhỏ bỗng trở nên ấm hơn giữa những ngày đầu năm. Tết ở quê khác Sài Gòn nhiều lắm: không ồn ào xe cộ, không những tòa nhà cao tầng, chỉ có con đường làng quen thuộc, tiếng gió biển nhè nhẹ và không khí thôn xóm bình yên. Tôi được chạy nhảy khắp nơi, theo người lớn đi thăm họ hàng, nghe những câu chuyện đầu năm giản dị mà thân thương.
+                            Giờ nghĩ lại, tôi mới thấy những cái Tết ấy không chỉ là niềm vui trẻ nhỏ, mà là cả một vùng ký ức ấm áp, nơi tình thân hiện hữu trong từng bữa cơm, từng nụ cười và từng cái ôm thật chặt của ông bà.  
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section class="quote">
+            <div class="container">
+                <div class="quote_content">
+                    <p class="quote_title">Tết là nơi những câu chuyện cũ được kể lại bằng yêu thương, để rồi theo năm tháng, chúng lặng lẽ trở thành phần đẹp nhất còn ở lại trong tim mỗi người.</p>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="footer_copyright">
+                <p class="footer_copyright-text">© 2026 Tết Sài Gòn | Làm bởi Nguyễn Trọng Phúc </p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

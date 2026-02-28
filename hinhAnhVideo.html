@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/reset/reset.css">
+    <link rel="stylesheet" href="./asset/css/styleHinhAnhVideo.css">
+    <title>Hình ảnh & Video</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <a class="logo_images" href="./index.html">
+                    <img src="./img/hoaMai.png" alt="hoa-mai" class="logo"> 
+                    <div class="text">
+                        <span class="logo_text">Tết</span>
+                        <span class="logo_text_secondary">đến rồi</span>
+                    </div>
+                </a>
+                <nav class="navbar">
+                    <ul class="navbar_list" id="navbar_list--pc">
+                        <li class="navbar_item"><a href="./index.html" class="navbar_link ">Trang chủ</a></li>
+                        <li class="navbar_item"><a href="./queHuong.html" class="navbar_link">Quê hương</a></li>
+                        <li class="navbar_item"><a href="./phongTuc.html" class="navbar_link">Phong tục</a></li>
+                        <li class="navbar_item"><a href="./amThuc.html" class="navbar_link">Ẩm thực</a></li>
+                        <li class="navbar_item"><a href="./vanHoa.html" class="navbar_link">Văn hóa</a></li>
+                        <li class="navbar_item"><a href="./hinhAnhVideo.html" class="navbar_link navbar_link--active">Ảnh & Video</a></li>
+                        <li class="navbar_item"><a href="./kyUc.html" class="navbar_link">Ký ức</a></li>
+                        <li class="navbar_item"><a href="./lienHe.html" class="navbar_link">Liên hệ</a></li>
+                    </ul>
+                </nav>
+            </div>       
+        </div>
+        <div class="mobile-header">
+            <input type="checkbox" name="menu-checkbox" id="menu-checkbox" class="menu-checkbox" hidden>
+            <label for="menu-checkbox">
+                <svg class="menu-header_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" >
+                    <path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+            </label>
+            <label for="menu-checkbox" class="menu-overplay"></label>
+            <div class="menu-drawer">
+                <div class="menu-drawer_top">
+                    <a class="logo_images" href="./index.html">
+                        <img src="./img/hoaMai.png" alt="hoa-mai" class="logo"> 
+                        <div class="text">
+                            <span class="logo_text">Tết</span>
+                            <span class="logo_text_secondary">đến rồi</span>
+                        </div>
+                    </a>
+                    <label for="menu-checkbox">
+                        <svg class="close_menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path fill="currentColor" d="M55.1 73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L147.2 256 9.9 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192.5 301.3 329.9 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.8 256 375.1 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192.5 210.7 55.1 73.4z"/></svg>
+                    </label>
+                </div>
+                <ul id="navbar_list--mobile"></ul>
+                <script>
+                    const navPC=document.querySelector("#navbar_list--pc");
+                    const navMobile=document.querySelector("#navbar_list--mobile");
+                    navMobile.innerHTML=navPC.innerHTML;
+                </script>
+            </div>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero_heading"> Sài Gòn</h1>
+            <h1 class="hero_content">Sài Gòn Tết xưa mộc mạc với tiếng pháo giòn tan và chợ hoa đơn sơ, còn Tết nay ở Thành phố Hồ Chí Minh rực rỡ ánh đèn, hiện đại và sôi động nhưng vẫn giữ trọn nét ấm áp nghĩa tình.</h1>
+            <p class="hero_desc">Xuân Sài Gòn - Nét xưa còn mãi, sắc mới thêm tươi</p>
+        </div>
+    </section>
+    <main>
+        <section class="introduce">
+            <div class="container">
+                <h1 class="section_heading">Tết xưa và nay</h1>
+                <p class="section_desc">
+                    Tết xưa gợi nhớ những ngày cuối năm giản dị, khi cả gia đình quây quần bên nồi bánh chưng đỏ lửa, trẻ con háo hức chờ nghe tiếng pháo giao thừa và người lớn tất bật chuẩn bị mâm cỗ cúng tổ tiên. Phố xá ngày ấy không quá rực rỡ nhưng ấm áp tình làng nghĩa xóm. Còn Tết nay, đặc biệt ở Thành phố Hồ Chí Minh, không khí trở nên sôi động và hiện đại hơn với những con đường trang hoàng ánh đèn, các trung tâm thương mại nhộn nhịp và điểm check-in nổi bật như Phố đi bộ Nguyễn Huệ ngập tràn sắc hoa. Dù thời gian làm thay đổi nhiều điều, Tết vẫn luôn là dịp để mọi người trở về bên gia đình, gìn giữ những giá trị truyền thống và gửi gắm hy vọng cho một năm mới an lành, hạnh phúc.
+                </p>
+            </div>
+        </section>
+        <section class="album">
+            <div class="container">
+                <h1 class="section_heading">Album Tết xưa và nay</h1>
+                <div class="album_list">
+                    <section class="album-item">
+                        <img src="./img/choHoaTet.png" alt="cho-hoa-Tet-xua" class="album-item_img">
+                        <h3 class="album-item_title">Chợ hoa Tết xưa</h3>
+                    </section>
+                    <section class="album-item album-item--now">
+                        <img src="./img/choHoaTetNay.png" alt="cho-hoa-Tet-nay" class="album-item_img">
+                        <h3 class="album-item_title">Chợ hoa Tết nay</h3>
+                    </section>
+                    <section class="album-item">
+                        <img src="./img/choTet.png" alt="cho-Tet-xua" class="album-item_img">
+                        <h3 class="album-item_title">Chợ Tết xưa</h3>
+                    </section>
+                    <section class="album-item album-item--now">
+                        <img src="./img/choTetNay.png" alt="cho-Tet-nay" class="album-item_img">
+                        <h3 class="album-item_title">Chợ Tết nay</h3>
+                    </section>
+                    <section class="album-item">
+                        <img src="./img/ongDo.png" alt="ong-do-xua" class="album-item_img">
+                        <h3 class="album-item_title">Ông đồ xưa</h3>
+                    </section>
+                    <section class="album-item album-item--now">
+                        <img src="./img/vietThuPhap.png" alt="ong-do-nay" class="album-item_img">
+                        <h3 class="album-item_title">Ông đồ nay</h3>
+                    </section>
+                    <section class="album-item">
+                        <img src="./img/chuaTet.png" alt="le-chua-xua" class="album-item_img">
+                        <h3 class="album-item_title">Lễ chùa xưa</h3>
+                    </section>
+                    <section class="album-item album-item--now">
+                        <img src="./img/diChua.png" alt="le-chua-nay" class="album-item_img">
+                        <h3 class="album-item_title">Lễ chùa nay</h3>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <section class="video">
+            <div class="container">
+                <h1 class="section_heading">Video</h1>
+                <h2 class="video_heading">Gói bánh Tét</h2>
+                <div class="video_content">
+                    <div class="video_wrapper video_wrapper--youtube">
+                        <iframe 
+                            src="https://www.youtube.com/embed/et3w1WeSbYU"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>                    
+                    </div>
+                    <p class="video_desc">Làm bánh Tét mỗi dịp xuân về không chỉ là công việc chuẩn bị món ăn ngày Tết mà còn là một nét đẹp truyền thống gắn kết gia đình. Từ việc vo nếp, ướp đậu xanh, thịt mỡ đến khéo léo gói bánh bằng lá chuối và canh nồi bánh suốt đêm, mọi người quây quần bên nhau, cùng trò chuyện và sẻ chia. Đòn bánh Tét tròn đầy tượng trưng cho sự sum vầy, đủ đầy và ước mong một năm mới an khang, hạnh phúc. Qua bao thế hệ, phong tục làm bánh Tét vẫn được gìn giữ như một cách trân trọng cội nguồn và lưu giữ hương vị Tết truyền thống.</p>
+                </div>
+                <h2 class="video_heading">Pháo hoa đêm giao thừa</h2>
+                <div class="video_wrapper video_wrapper--video">
+                        <video controls>
+                            <source src="./img/phaoHoa.mp4" type="video/mp4">
+                        </video>
+                    </div>
+            </div>
+        </section>
+        <section class="quote">
+            <div class="container">
+                <div class="quote_content">
+                    <p class="quote_title">Tết xưa đong đầy sự giản dị và sum vầy bên mái ấm gia đình, còn Tết nay thêm sắc màu hiện đại nhưng vẫn luôn gìn giữ giá trị yêu thương và truyền thống thiêng liêng.</p>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="footer_copyright">
+                <p class="footer_copyright-text">© 2026 Tết Sài Gòn | Làm bởi Nguyễn Trọng Phúc </p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

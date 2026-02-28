@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/reset/reset.css">
+    <link rel="stylesheet" href="./asset/css/stylePhongTuc.css">
+    <title>Phong tục</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <a class="logo_images" href="./index.html">
+                    <img src="./img/hoaMai.png" alt="hoa-mai" class="logo"> 
+                    <div class="text">
+                        <span class="logo_text">Tết</span>
+                        <span class="logo_text_secondary">đến rồi</span>
+                    </div>
+                </a>
+                <nav class="navbar">
+                    <ul class="navbar_list" id="navbar_list--pc">
+                        <li class="navbar_item"><a href="./index.html" class="navbar_link ">Trang chủ</a></li>
+                        <li class="navbar_item"><a href="./queHuong.html" class="navbar_link ">Quê hương</a></li>
+                        <li class="navbar_item"><a href="./phongTuc.html" class="navbar_link navbar_link--active">Phong tục</a></li>
+                        <li class="navbar_item"><a href="./amThuc.html" class="navbar_link">Ẩm thực</a></li>
+                        <li class="navbar_item"><a href="./vanHoa.html" class="navbar_link">Văn hóa</a></li>
+                        <li class="navbar_item"><a href="./hinhAnhVideo.html" class="navbar_link">Ảnh & Video</a></li>
+                        <li class="navbar_item"><a href="./kyUc.html" class="navbar_link">Ký ức</a></li>
+                        <li class="navbar_item"><a href="./lienHe.html" class="navbar_link">Liên hệ</a></li>
+                    </ul>
+                </nav>
+            </div>          
+        </div>
+        <div class="mobile-header">
+            <input type="checkbox" name="menu-checkbox" id="menu-checkbox" class="menu-checkbox" hidden>
+            <label for="menu-checkbox">
+                <svg class="menu-header_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" >
+                    <path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+            </label>
+            <label for="menu-checkbox" class="menu-overplay"></label>
+            <div class="menu-drawer">
+                <div class="menu-drawer_top">
+                    <a class="logo_images" href="./index.html">
+                        <img src="./img/hoaMai.png" alt="hoa-mai" class="logo"> 
+                        <div class="text">
+                            <span class="logo_text">Tết</span>
+                            <span class="logo_text_secondary">đến rồi</span>
+                        </div>
+                    </a>
+                    <label for="menu-checkbox">
+                        <svg class="close_menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path fill="currentColor" d="M55.1 73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L147.2 256 9.9 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192.5 301.3 329.9 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.8 256 375.1 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192.5 210.7 55.1 73.4z"/></svg>
+                    </label>
+                </div>
+                <ul id="navbar_list--mobile"></ul>
+                <script>
+                    const navPC=document.querySelector("#navbar_list--pc");
+                    const navMobile=document.querySelector("#navbar_list--mobile");
+                    navMobile.innerHTML=navPC.innerHTML;
+                </script>
+            </div>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero_heading"> Sài Gòn</h1>
+            <h1 class="hero_content">Mang nét giao thoa văn hóa, vừa hiện đại vừa gìn giữ truyền thống.</h1>
+            <p class="hero_desc">Xuân Sài Gòn - Nét xưa còn mãi, sắc mới thêm tươi</p>
+        </div>
+    </section>
+    <main>
+        <section class="introduce">
+            <div class="container">
+                <h1 class="section_heading">Giới thiệu qua phong tục</h1>
+                <p class="section_desc">Tại Thành phố Hồ Chí Minh, các phong tục cổ truyền và hiện đại hòa quyện tạo nên bản sắc riêng của đô thị năng động này. Người dân vẫn gìn giữ những nét truyền thống như thờ cúng tổ tiên, đón Tết Nguyên đán, đi chùa đầu năm, tổ chức cưới hỏi theo nghi lễ gia đình. Bên cạnh đó, thành phố cũng mang đậm phong cách sống hiện đại với các lễ hội quốc tế, sự kiện âm nhạc, văn hóa đường phố và lối sống trẻ trung, cởi mở. Sự giao thoa ấy thể hiện tinh thần hội nhập nhưng vẫn trân trọng giá trị văn hóa lâu đời.</p>
+            </div>
+        </section>
+        <section class="beforeTet">
+            <div class="container">
+                <h1 class="section_heading">Phong tục trước Tết</h1>
+                <div class="beforeTet_list">
+                    <section class="beforeTet-item beforeTet-item--left">
+                        <img src="./img/tienOngTao.png" alt="tien-ong-Cong-ong-Tao" class="beforeTet-item_img">
+                        <div class="beforeTet-item_content">
+                            <h3 class="beforeTet-item_heading">Tiễn ông Công ông Táo</h3>
+                            <p class="beforeTet-item_desc">
+                                Đây là dấu mốc đầu tiên báo hiệu Tết đã cận kề. Người Sài Gòn thường chuẩn bị lễ vật gồm bình hoa tươi, đĩa trái cây và không thể thiếu ba con cá chép đỏ. Sau khi thắp hương khấn nguyện, người dân sẽ mang cá ra các dòng kênh như Nhiêu Lộc - Thị Nghè hoặc sông Sài Gòn để phóng sinh. Hành động này không chỉ mang ý nghĩa đưa tiễn các vị thần về trời báo cáo việc hạ giới mà còn thể hiện tấm lòng từ bi, phóng hạ đồ đao của người dân phương Nam.
+                            </p>
+                        </div>
+                    </section>
+                    <section class="beforeTet-item beforeTet-item--right">
+                        <img src="./img/taoMo.png" alt="tao-mo" class="beforeTet-item_img">
+                        <div class="beforeTet-item_content">
+                            <h3 class="beforeTet-item_heading">Tảo mộ</h3>
+                            <p class="beforeTet-item_desc">
+                                Vào những ngày cuối tháng Chạp, các gia đình tại TP.HCM thường thu xếp công việc để về các nghĩa trang hay nhà cốt thăm viếng người thân đã khuất. Đây là dịp để con cháu lau chùi bát hương, dọn cỏ và sơn sửa lại mộ phần cho sạch đẹp. Khói hương nghi ngút bên mộ phần không chỉ là lòng thành kính với tổ tiên mà còn là lời mời gọi linh hồn người thân về sum họp, ăn Tết cùng gia đình trong những ngày xuân sắp tới.
+                            </p>
+                        </div>
+                    </section>
+                    <section class="beforeTet-item beforeTet-item--left">
+                        <img src="./img/donDepNhaCua.png" alt="don-dep-nha-cua" class="beforeTet-item_img">
+                        <div class="beforeTet-item_content">
+                            <h3 class="beforeTet-item_heading">Dọn dẹp và trang trí nhà cửa</h3>
+                            <p class="beforeTet-item_desc">
+                                Dọn dẹp nhà cửa là nghi thức "tống cựu nghênh tân" quan trọng trước thềm năm mới. Mọi thành viên thường chung tay lau chùi bàn thờ, sơn sửa cửa nẻo để xua tan vận rủi năm cũ. Sau khi sạch sẽ, ngôi nhà được khoác lên vẻ rực rỡ bởi những chậu mai vàng rực sáng, cúc vạn thọ và các dải treo đỏ may mắn. Việc chăm chút không gian sống không chỉ thể hiện sự tươm tất mà còn là cách người dân mở lòng đón rước tài lộc và bình an vào nhà.
+                            </p>
+                        </div>
+                    </section>
+                    <section class="beforeTet-item beforeTet-item--right">
+                        <img src="./img/mamNguQua.png" alt="mam-ngu-qua" class="beforeTet-item_img">
+                        <div class="beforeTet-item_content">
+                            <h3 class="beforeTet-item_heading">Mâm ngũ quả</h3>
+                            <p class="beforeTet-item_desc">
+                                Cách bày mâm ngũ quả của người Sài Gòn thể hiện sự hóm hỉnh và ước vọng thực tế. Thay vì chọn trái cây theo màu sắc hay tên gọi Hán Việt, họ chọn các loại quả có tên đọc chệch đi để tạo thành lời cầu chúc: Mãng cầu (Cầu), Sung (Sung túc), Dừa (Vừa), Đu đủ (Đủ) và Xoài (Xài). Người dân ở đây thường tránh cúng chuối vì sợ "chúi nhủi" hay cam vì sợ "quýt làm cam chịu", tạo nên một nét đặc trưng riêng biệt trong tâm linh người miền Nam.
+                            </p>
+                        </div>
+                    </section>
+                    <section class="beforeTet-item beforeTet-item--left">
+                        <img src="./img/cungTatNien.png" alt="cung-tat-nien" class="beforeTet-item_img">
+                        <div class="beforeTet-item_content">
+                            <h3 class="beforeTet-item_heading">Cúng tất niên</h3>
+                            <p class="beforeTet-item_desc">
+                                Cúng Tất niên là thời khắc linh thiêng nhất để người Sài Gòn tổng kết năm cũ và mời tổ tiên về sum họp. Chiều cuối năm, mâm cỗ thịnh soạn với thịt kho hột vịt, canh khổ qua và bánh tét được dâng lên bàn thờ đầy thành kính. Khói hương nghi ngút nối liền hai thế giới, thắt chặt sợi dây tình thân giữa các thế hệ. Sau lễ cúng, cả gia đình cùng quây quần bên bữa cơm ấm cúng, trân trọng những phút giây đoàn viên trước khi đón chờ giao thừa.
+                            </p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <section class="duringTet">
+            <div class="container">
+                <h1 class="section_heading">Phong tục trong Tết</h1>
+                <div class="duringTet_list">
+                    <section class="duringTet-item">
+                        <input type="checkbox" id="item1">
+                        <label for="item1" class="card-layout">
+                            <img src="./img/cungGiaoThua.png" alt="cung-giao-thua" class="duringTet-item_img">
+                            <div class="duringTet-item_content">
+                                <h3 class="duringTet-item_heading">Cúng giao thừa</h3>
+                                <p class="duringTet-item_desc">
+                                    Cúng giao thừa là nghi lễ quan trọng diễn ra vào thời khắc chuyển giao giữa năm cũ và năm mới. Mâm cúng thường được chuẩn bị trang trọng với hương hoa, trái cây và các món truyền thống để bày tỏ lòng biết ơn tổ tiên, cầu mong một năm bình an, thuận lợi. Nghi lễ thể hiện sự trân trọng giá trị gia đình và nét đẹp văn hóa lâu đời.
+                                </p>
+                            </div>
+                        </label>
+                    </section>
+                    <section class="duringTet-item">
+                        <input type="checkbox" id="item2">
+                        <label for="item2" class="card-layout">
+                            <img src="./img/xongDat.png" alt="xong-dat" class="duringTet-item_img">
+                            <div class="duringTet-item_content">
+                                <h3 class="duringTet-item_heading">Xông đất</h3>
+                                <p class="duringTet-item_desc">
+                                    Xông đất là phong tục chọn người đầu tiên bước vào nhà trong năm mới. Người được chọn thường hợp tuổi, tính tình vui vẻ với mong muốn mang lại may mắn, tài lộc cho gia chủ. Đây là nét tín ngưỡng dân gian thể hiện niềm tin vào khởi đầu tốt đẹp.
+                                </p>
+                            </div>
+                        </label>
+                    </section>
+                   <section class="duringTet-item">
+                        <input type="checkbox" id="item3">
+                        <label for="item3" class="card-layout">
+                            <img src="./img/diChua.png" alt="di-le-chua" class="duringTet-item_img">
+                            <div class="duringTet-item_content">
+                                <h3 class="duringTet-item_heading">Đi lễ chùa</h3>
+                                <p class="duringTet-item_desc">
+                                    Ngay sau giao thừa hoặc sáng mùng 1, người Sài Gòn thường đổ xô đi lễ tại các ngôi chùa lớn như Vĩnh Nghiêm, chùa Hoằng Pháp hay Việt Nam Quốc Tự. Họ đến đây không chỉ để cầu xin sức khỏe, công việc hanh thông mà còn để tìm kiếm sự thanh thản trong tâm hồn. Hình ảnh những người phụ nữ mặc áo dài thướt tha, trên tay cầm nhành lộc hoặc cây mía mang về nhà đã tạo nên một khung cảnh xuân bình yên giữa lòng thành phố nhộn nhịp.
+                                </p>
+                            </div>
+                        </label>
+                    </section>
+                    <section class="duringTet-item">
+                        <input type="checkbox" id="item4">
+                        <label for="item4" class="card-layout">
+                            <img src="./img/chucTetVaLiXi.png" alt="-chuc-Tet-li-xi" class="duringTet-item_img">
+                            <div class="duringTet-item_content">
+                                <h3 class="duringTet-item_heading">Chúc Tết và lì xì</h3>
+                                <p class="duringTet-item_desc">
+                                    "Mùng 1 Tết cha, mùng 2 Tết mẹ" là nếp sống truyền thống mà người Sài Gòn vẫn gìn giữ. Những ngày đầu năm là lúc con cháu tụ họp về nhà ông bà, cha mẹ để gửi những lời chúc tốt đẹp nhất. Những bao lì xì đỏ thắm chứa đựng tiền mừng tuổi được trao cho trẻ nhỏ và người già không quan trọng ở giá trị vật chất, mà đó là lời chúc cho sự chóng lớn, ngoan ngoãn và trường thọ, gắn kết tình cảm giữa các thế hệ.
+                                </p>
+                            </div>
+                        </label>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <section class="afterTet">
+            <div class="container">
+                <h1 class="section_heading">Phong tục sau Tết</h1>
+                <div class="afterTet_list">
+                    <section class="afterTet-item afterTet-item--left">
+                        <img src="./img/leHoaVang.png" alt="le-hoa-vang" class="afterTet-item_img">
+                        <div class="afterTet-item_content">
+                            <h3 class="afterTet-item_heading">Lễ hóa vàng</h3>
+                            <p class="afterTet-item_desc">
+                                Lễ hóa vàng là nghi thức truyền thống diễn ra sau những ngày Tết, thường vào mùng 3 hoặc mùng 7 âm lịch. Đây là dịp gia đình làm mâm cơm cúng để tiễn ông bà, tổ tiên sau thời gian “về ăn Tết” cùng con cháu. Sau lễ cúng, vàng mã được hóa với ý nghĩa gửi lễ vật về cõi âm. Phong tục này thể hiện lòng biết ơn, sự hiếu kính và ước mong một năm mới bình an, thuận hòa.
+                            </p>
+                        </div>
+                    </section>
+                    <section class="afterTet-item afterTet-item--right">
+                        <img src="./img/cungThanTai.png" alt="cung-than-tai" class="afterTet-item_img">
+                        <div class="afterTet-item_content">
+                            <h3 class="afterTet-item_heading">Cúng thần tài</h3>
+                            <p class="afterTet-item_desc">
+                                Là trung tâm kinh tế lớn nhất cả nước, phong tục cúng vía Thần Tài tại TP.HCM đặc biệt sôi động. Các cửa hàng kinh doanh, công ty thường mua vàng miếng hoặc vàng trang sức vào ngày này để cầu mong một năm "buôn may bán đắt". Trên mâm cúng Thần Tài của người Sài Gòn không bao giờ thiếu món cá lóc nướng trui còn nguyên vây vẩy, cùng với bộ "tam sên" (thịt luộc, tôm, trứng), thể hiện sự tri ân đến các vị thần đã phù hộ cho việc làm ăn.
+                            </p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <section class="quote">
+            <div class="container">
+                <div class="quote_content">
+                    <p class="quote_title">Phong tục của Thành phố Hồ Chí Minh dẫu hòa nhịp sống tân thời, vẫn phảng phất nét xưa nghĩa cũ, giữ trọn đạo hiếu và tình người qua mỗi mùa xuân về.</p>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="footer_copyright">
+                <p class="footer_copyright-text">© 2026 Tết Sài Gòn | Làm bởi Nguyễn Trọng Phúc </p>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

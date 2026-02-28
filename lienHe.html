@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/reset/reset.css">
+    <link rel="stylesheet" href="./asset/css/styleLienHe.css">
+    <title>Liên hệ</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <a class="logo_images" href="./index.html">
+                    <img src="./img/hoaMai.png" alt="hoa-mai" class="logo"> 
+                    <div class="text">
+                        <span class="logo_text">Tết</span>
+                        <span class="logo_text_secondary">đến rồi</span>
+                    </div>
+                </a>
+                <nav class="navbar">
+                    <ul class="navbar_list" id="navbar_list--pc">
+                        <li class="navbar_item"><a href="./index.html" class="navbar_link ">Trang chủ</a></li>
+                        <li class="navbar_item"><a href="./queHuong.html" class="navbar_link">Quê hương</a></li>
+                        <li class="navbar_item"><a href="./phongTuc.html" class="navbar_link">Phong tục</a></li>
+                        <li class="navbar_item"><a href="./amThuc.html" class="navbar_link">Ẩm thực</a></li>
+                        <li class="navbar_item"><a href="./vanHoa.html" class="navbar_link">Văn hóa</a></li>
+                        <li class="navbar_item"><a href="./hinhAnhVideo.html" class="navbar_link">Ảnh & Video</a></li>
+                        <li class="navbar_item"><a href="./kyUc.html" class="navbar_link">Ký ức</a></li>
+                        <li class="navbar_item"><a href="./lienHe.html" class="navbar_link navbar_link--active">Liên hệ</a></li>
+                    </ul>
+                </nav>
+            </div>     
+        </div>
+        <div class="mobile-header">
+            <input type="checkbox" name="menu-checkbox" id="menu-checkbox" class="menu-checkbox" hidden>
+            <label for="menu-checkbox">
+                <svg class="menu-header_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" >
+                    <path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+            </label>
+            <label for="menu-checkbox" class="menu-overplay"></label>
+            <div class="menu-drawer">
+                <div class="menu-drawer_top">
+                    <a class="logo_images" href="./index.html">
+                        <img src="./img/hoaMai.png" alt="hoa-mai" class="logo"> 
+                        <div class="text">
+                            <span class="logo_text">Tết</span>
+                            <span class="logo_text_secondary">đến rồi</span>
+                        </div>
+                    </a>
+                    <label for="menu-checkbox">
+                        <svg class="close_menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path fill="currentColor" d="M55.1 73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L147.2 256 9.9 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192.5 301.3 329.9 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.8 256 375.1 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192.5 210.7 55.1 73.4z"/></svg>
+                    </label>
+                </div>
+                <ul id="navbar_list--mobile"></ul>
+                <script>
+                    const navPC=document.querySelector("#navbar_list--pc");
+                    const navMobile=document.querySelector("#navbar_list--mobile");
+                    navMobile.innerHTML=navPC.innerHTML;
+                </script>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="heading">
+            <div class="container">
+                <h1 class="section_heading">Liên hệ & Đóng góp</h1>
+            </div>
+        </section>
+        <section class="request">
+            <div class="container">
+                <form class="request-form">
+                    <div class="form-group">
+                        <label>Họ và tên</label><br>
+                        <input type="text" placeholder="Nhập họ tên" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email</label><br>
+                        <input type="email" placeholder="Nhập email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Tiêu đề yêu cầu</label><br>
+                        <input type="text" placeholder="Nhập tiêu đề" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Nội dung</label><br>
+                        <textarea rows="5" placeholder="Nhập nội dung yêu cầu..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        Gửi yêu cầu
+                    </button>
+                </form>
+            </div>
+        </section>
+        <section class="information">
+            <div class="container">
+                <div class="information_list">
+                    <section class="information-item">
+                        <h2 class="information_heading">Thông tin liên hệ</h2>
+                        <p class="information-item_content"><strong class="bold_item"> Họ tên:</strong>  Nguyễn Trọng Phúc</p>
+                        <p class="information-item_content"> <strong class="bold_item">Lớp: </strong> D23_TH09</p>
+                        <p class="information-item_content"><strong class="bold_item">MSSV: </strong> DH52301555</p>
+                        <p class="information-item_content"><strong class="bold_item">Email: </strong> dh52301555@student.stu.edu.vn</p>
+                    </section>
+                    <section class="information-item">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d501725.4184232264!2d106.36555138885944!3d10.75529287607328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529292e8d3dd1%3A0xf15f5aad773c112b!2zVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1772182492203!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="footer_copyright">
+                <p class="footer_copyright-text">© 2026 Tết Sài Gòn | Làm bởi Nguyễn Trọng Phúc </p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/reset/reset.css">
+    <link rel="stylesheet" href="./asset/css/styleQueHuong.css">
+    <title>Quê hương</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <a class="logo_images" href="./index.html">
+                    <img src="./img/hoaMai.png" alt="hoa-mai" class="logo"> 
+                    <div class="text">
+                        <span class="logo_text">Tết</span>
+                        <span class="logo_text_secondary">đến rồi</span>
+                    </div>
+                </a>
+                <nav class="navbar">
+                    <ul class="navbar_list" id="navbar_list--pc">
+                        <li class="navbar_item"><a href="./index.html" class="navbar_link ">Trang chủ</a></li>
+                        <li class="navbar_item"><a href="./queHuong.html" class="navbar_link navbar_link--active">Quê hương</a></li>
+                        <li class="navbar_item"><a href="./phongTuc.html" class="navbar_link">Phong tục</a></li>
+                        <li class="navbar_item"><a href="./amThuc.html" class="navbar_link">Ẩm thực</a></li>
+                        <li class="navbar_item"><a href="./vanHoa.html" class="navbar_link">Văn hóa</a></li>
+                        <li class="navbar_item"><a href="./hinhAnhVideo.html" class="navbar_link">Ảnh & Video</a></li>
+                        <li class="navbar_item"><a href="./kyUc.html" class="navbar_link">Ký ức</a></li>
+                        <li class="navbar_item"><a href="./lienHe.html" class="navbar_link">Liên hệ</a></li>
+                    </ul>
+                </nav>
+            </div>       
+        </div>
+        <div class="mobile-header">
+            <input type="checkbox" name="menu-checkbox" id="menu-checkbox" class="menu-checkbox" hidden>
+            <label for="menu-checkbox">
+                <svg class="menu-header_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" >
+                    <path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+            </label>
+            <label for="menu-checkbox" class="menu-overplay"></label>
+            <div class="menu-drawer">
+                <div class="menu-drawer_top">
+                    <a class="logo_images" href="./index.html">
+                        <img src="./img/hoaMai.png" alt="hoa-mai" class="logo"> 
+                        <div class="text">
+                            <span class="logo_text">Tết</span>
+                            <span class="logo_text_secondary">đến rồi</span>
+                        </div>
+                    </a>
+                    <label for="menu-checkbox">
+                        <svg class="close_menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path fill="currentColor" d="M55.1 73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L147.2 256 9.9 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192.5 301.3 329.9 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.8 256 375.1 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192.5 210.7 55.1 73.4z"/></svg>
+                    </label>
+                </div>
+                <ul id="navbar_list--mobile"></ul>
+                <script>
+                    const navPC=document.querySelector("#navbar_list--pc");
+                    const navMobile=document.querySelector("#navbar_list--mobile");
+                    navMobile.innerHTML=navPC.innerHTML;
+                </script>
+            </div>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero_heading"> Sài Gòn</h1>
+            <h1 class="hero_content">Nơi đô thị sôi động và hiện đại bậc nhất cả nước, nơi hội tụ nhịp sống trẻ trung cùng bề dày lịch sử và văn hóa đặc sắc.</h1>
+            <p class="hero_desc">Xuân Sài Gòn - Nét xưa còn mãi, sắc mới thêm tươi</p>
+        </div>
+    </section>
+    <main>
+        <section class="location">
+            <div class="container">
+                <div class="location_content">
+                    <h1 class="section_heading">Vị trí địa lý</h1>
+                    <p class="section_desc">
+                        Thành phố Hồ Chí Minh nằm trong toạ độ địa lý khoảng 10 0 10' – 10 0 38' vĩ độ bắc và 106 0 22’ – 106 0 54’ kinh độ đông. Phía Bắc giáp tỉnh Bình Dương, Tây Bắc giáp tỉnh Tây Ninh, Đông và Đông Bắc giáp tỉnh Đồng Nai, Đông Nam giáp tỉnh Bà Rịa - Vũng Tàu, Tây và Tây Nam giáp tỉnh Long An và Tiền Giang.<br>
+                        Thành phố Hồ Chí Minh cách thủ đô Hà Nội gần 1.730km đường bộ, nằm ở ngã tư quốc tế giữa các con đường hàng hải từ Bắc xuống Nam, từ Ðông sang Tây, là tâm điểm của khu vực Đông Nam Á.<br>
+                        Trung tâm Thành phố Hồ Chí Minh cách bờ biển Đông 50 km đường chim bay. Đây là đầu mối giao thông nối liền các tỉnh trong vùng và là cửa ngõ quốc tế. Với hệ thống cảng và sân bay lớn nhất cả nước, cảng Sài Gòn với năng lực hoạt động 10 triệu tấn/năm. Sân bay quốc tế Tân Sơn Nhất với hàng chục đường bay chỉ cách trung tâm thành phố 7km.<br>
+                        Từ ngày 1/7/2025, TP.HCM chính thức sáp nhập với tỉnh Bình Dương và Bà Rịa - Vũng Tàu. Thành phố Hồ Chí Minh giáp các tỉnh Đồng Nai, Đồng Tháp, Lâm Đồng, Tây Ninh và Biển Đông.
+                    </p>
+                </div>
+                <img src="./img/banDoThanhPho.png" alt="ban-do-thanh-pho" class="location_img">
+            </div>
+        </section>
+        <section class="featured">
+            <div class="container">
+                <h1 class="section_heading">Đặc điểm nổi bật của Thành phố Hồ Chí Minh</h1>
+                <div class="featured_list">
+                    <section class="featured-item">
+                        <div class="featured-item_content">
+                            <h3 class="featured-item_heading">Kinh tế</h3>
+                            <p class="featured-item_desc">Trong 6 tháng đầu năm 2025, Thành phố Hồ Chí Minh đạt nhiều kết quả nổi bật về kinh tế – xã hội, với GRDP tăng trên 8%, cao nhất kể từ năm 2020. Bán lẻ tăng 17,3%, xuất khẩu tăng 13,3%, vốn đầu tư toàn xã hội tăng 16,2% và FDI đạt gần 3 tỷ USD. Thành phố tháo gỡ 63 dự án, khơi thông hơn 86.000 tỷ đồng, đưa thu ngân sách đạt khoảng 322 nghìn tỷ đồng. Đồng thời, các sự kiện lớn như Đại lễ 30/4 và Vesak được tổ chức thành công, góp phần nâng cao vị thế Việt Nam.</p>
+                        </div>
+                        <img src="./img/kinhTe.png" alt="kinh-te" class="featured-item_img featured-item_img--left">
+                    </section>
+                    <section class="featured-item">
+                        <div class="featured-item_content">
+                            <h3 class="featured-item_heading">Văn hóa</h3>
+                            <p class="featured-item_desc">Thành phố Hồ Chí Minh là nơi giao thoa nhiều giá trị văn hóa truyền thống và hiện đại. Thành phố mang đậm nét phóng khoáng của Nam Bộ, đồng thời thể hiện tinh thần năng động của một đô thị lớn. Những công trình như Nhà thờ Đức Bà Sài Gòn và Bưu điện Trung tâm Sài Gòn góp phần tạo nên dấu ấn kiến trúc đặc trưng. Bên cạnh đó, ẩm thực đa dạng cùng con người thân thiện, nghĩa tình đã làm nên bản sắc riêng, tạo sức hút bền bỉ cho thành phố.</p>
+                        </div>
+                        <img src="./img/vanHoa.png" alt="van-hoa" class="featured-item_img">
+                    </section>
+                    <section class="featured-item">
+                        <div class="featured-item_content">
+                            <h3 class="featured-item_heading">Dân số</h3>
+                            <p class="featured-item_desc">Thành phố Hồ Chí Minh là thành phố lớn nhất ở Việt nam xét về mặt dân số và quy mô đô thị hóa. Theo kết quả điều tra dân số chính thức vào thời điểm 1/4/2009 thì dân số của thành phố là 7.162.864 người (chiếm 8,34% dân số Việt Nam), mật độ dân số trung bình 3.419 người/km2. Đến năm 2019, dân số thành phố tăng lên 8.993.082 người và cũng là nơi có mật độ dân số cao nhất Việt Nam. 1/7/2025, sau khi Thành phố Hồ Chí Minh sáp nhập với tỉnh Bà Rịa - Vũng Tàu, tỉnh Bình Dương, quy mô dân số đã là 14.002.598 người.</p>
+                        </div>
+                        <img src="./img/danSo.png" alt="dan-so" class="featured-item_img featured-item_img--left">
+                    </section>
+                    <section class="featured-item">
+                        <div class="featured-item_content">
+                            <h3 class="featured-item_heading">Diện tích</h3>
+                            <p class="featured-item_desc">Diện tích Thành phố Hồ Chí Minh trước khi sáp nhập (thời điểm ổn định từ năm 1991 đến trước khi thực hiện quy hoạch mới 2025) là khoảng 2.095 - 2.096 . Đây là diện tích tự nhiên bao gồm các quận nội thành và huyện ngoại thành (gồm cả huyện Cần Giờ). Sau khi sáp nhập với hai tỉnh Bình Dương và Bà Rịa – Vũng Tàu (chính thức từ 1/7/2025), TP.HCM trở thành siêu đô thị mới với tổng diện tích tự nhiên hơn 6.772 km².</p>
+                        </div>
+                        <img src="./img/dienTich.png" alt="dien-tich" class="featured-item_img">
+                    </section>
+                </div>
+            </div>
+        </section>
+        <section class="place">
+            <div class="container">
+                <h1 class="section_heading">Địa điểm cho tết Sài Gòn</h1>
+                <p class="section_desc">Bấm vào ảnh để biết thêm thông tin</p>
+                <div class="place_list">                    
+                    <section class="place-item">
+                        <input type="checkbox" id="item1">
+                        <label for="item1" class="card-layout">
+                            <img src="./img/duongHoaNguyenHue.png" alt="duong-hoa-Nguyen-Hue" class="place-item_img">
+                            <div class="place-item_text-area">
+                                <h3 class="place-item_title">Đường hoa Nguyễn Huệ</h3>
+                                <p class="place-item_content">
+                                    Đường hoa Nguyễn Huệ là sự kiện văn hóa nổi bật mỗi dịp Tết Nguyên đán tại TP.HCM. Được tổ chức trên phố đi bộ trung tâm Quận 1, nơi đây thu hút đông đảo người dân và du khách tham quan, chụp ảnh. Hàng năm, đường hoa được trang trí theo chủ đề riêng với linh vật năm mới cùng nhiều tiểu cảnh nghệ thuật đặc sắc. Hàng ngàn loài hoa khoe sắc rực rỡ tạo nên không gian xuân tươi vui, rộn ràng, thể hiện nét đẹp truyền thống và hiện đại của thành phố.
+                                </p>
+                            </div>
+                        </label>
+                    </section>
+                    <section class="place-item">
+                        <input type="checkbox" id="item2">
+                        <label for="item2" class="card-layout">
+                            <img src="./img/dinhDocLap.png" alt="dinh-doc-lap" class="place-item_img">
+                            <div class="place-item_text-area">
+                                <h3 class="place-item_title">Dinh độc lập</h3>
+                                <p class="place-item_content">
+                                    Dinh Độc Lập là một trong những công trình lịch sử nổi bật tại TP.HCM. Được xây dựng trên nền Dinh Norodom cũ và hoàn thành năm 1966, nơi đây từng là phủ tổng thống của chính quyền Sài Gòn. Dinh gắn liền với sự kiện ngày 30/4/1975 khi xe tăng tiến vào, đánh dấu thời khắc thống nhất đất nước. Với kiến trúc hiện đại kết hợp hài hòa yếu tố truyền thống, Dinh Độc Lập không chỉ có giá trị lịch sử sâu sắc mà còn là điểm tham quan thu hút đông đảo du khách trong và ngoài nước.
+                                </p>
+                            </div>
+                        </label>
+                    </section>
+                    <section class="place-item">
+                        <input type="checkbox" id="item3">
+                        <label for="item3" class="card-layout">
+                            <img src="./img/thaoCamVien.png" alt="thao-cam-vien" class="place-item_img">
+                            <div class="place-item_text-area">
+                                <h3 class="place-item_title">Thảo cầm viên</h3>
+                                <p class="place-item_content">
+                                    Thảo Cầm Viên Sài Gòn là một trong những vườn thú lâu đời nhất Việt Nam, được xây dựng từ năm 1864. Nằm gần trung tâm TP.HCM, nơi đây vừa là công viên xanh mát vừa là khu bảo tồn nhiều loài động, thực vật quý hiếm. Với không gian rộng rãi, nhiều cây cổ thụ và khu vui chơi dành cho trẻ em, Thảo Cầm Viên là điểm tham quan, học tập và giải trí quen thuộc của người dân và du khách. Đây cũng là địa điểm lý tưởng để tìm hiểu về thiên nhiên giữa lòng thành phố nhộn nhịp.
+                                </p>
+                            </div>
+                        </label>
+                    </section>
+                    <section class="place-item">
+                        <input type="checkbox" id="item4">
+                        <label for="item4" class="card-layout">
+                            <img src="./img/chuaVinhNghiem.png" alt="chua-Vinh-Nghiem" class="place-item_img ">
+                            <div class="place-item_text-area">
+                                <h3 class="place-item_title">Chùa Vĩnh Nghiêm</h3>
+                                <p class="place-item_content">
+                                    Chùa Vĩnh Nghiêm là một trong những ngôi chùa lớn và nổi tiếng tại TP.HCM, được xây dựng năm 1964 theo kiến trúc Phật giáo truyền thống Việt Nam. Nổi bật với tháp đá cao và mái cong đặc trưng, chùa mang vẻ đẹp trang nghiêm, thanh tịnh giữa lòng thành phố nhộn nhịp. Đây không chỉ là nơi sinh hoạt tôn giáo của tăng ni, Phật tử mà còn là điểm tham quan thu hút du khách. Chùa Vĩnh Nghiêm góp phần gìn giữ và lan tỏa những giá trị văn hóa, tâm linh đặc sắc của dân tộc.
+                                </p>
+                            </div>
+                        </label>
+                    </section>
+                    <section class="place-item">
+                        <input type="checkbox" id="item5">
+                        <label for="item5" class="card-layout">
+                            <img src="./img/chuaNgocHoang.png" alt="chua-Ngoc-Hoang" class="place-item_img">
+                            <div class="place-item_text-area">
+                                <h3 class="place-item_title">Chùa Ngọc Hoàng</h3>
+                                <p class="place-item_content">
+                                    Chùa Ngọc Hoàng là một ngôi chùa cổ kính và linh thiêng tại TP.HCM, được xây dựng đầu thế kỷ XX theo kiến trúc Trung Hoa độc đáo. Chùa nổi bật với mái ngói âm dương, những bức phù điêu tinh xảo và không gian trầm mặc, nghi ngút khói hương. Nơi đây thờ Ngọc Hoàng Thượng Đế cùng nhiều vị thần, Phật khác. Chùa không chỉ là điểm sinh hoạt tín ngưỡng của người dân mà còn thu hút đông đảo du khách trong và ngoài nước đến tham quan, cầu bình an và may mắn.
+                                </p>
+                            </div>
+                        </label>
+                    </section>
+                    <section class="place-item">
+                        <input type="checkbox" id="item6">
+                        <label for="item6" class="card-layout">
+                            <img src="./img/dinhPhongPhu.png" alt="dinh-Phong-Phu" class="place-item_img">
+                            <div class="place-item_text-area">
+                                <h3 class="place-item_title">Đình Phong Phú</h3>
+                                <p class="place-item_content">
+                                    Đình Phong Phú là một ngôi đình cổ tiêu biểu của vùng Nam Bộ, tọa lạc tại TP.HCM và mang đậm giá trị lịch sử, văn hóa truyền thống. Đình được xây dựng theo kiến trúc dân gian với mái ngói, cột gỗ và các hoa văn chạm khắc tinh xảo. Đây là nơi thờ Thành Hoàng làng, đồng thời là trung tâm sinh hoạt tín ngưỡng, lễ hội của người dân địa phương. Trải qua nhiều năm tồn tại, Đình Phong Phú vẫn giữ được nét cổ kính, trang nghiêm, góp phần bảo tồn bản sắc văn hóa dân tộc.
+                                </p>
+                            </div>
+                        </label>
+                    </section>
+                </div>
+            </div>
+        </section>
+        
+        <section class="different">
+            <div class="container">
+                <h1 class="section_heading">Sự khác biệt giữa Tết của Sài Gòn và Tết của nơi khác</h1>
+                <p class="section_desc">
+                    Thành phố Hồ Chí Minh là nơi giao thoa của nhiều nền văn hóa, tạo nên bức tranh đa sắc giữa lòng đô thị sôi động. Khi Tết đến, những người con xa quê lần lượt trở về sum họp, khiến nhịp sống thường ngày trở nên lắng dịu. Thành phố không còn quá náo nhiệt, nhưng vẫn giữ được nét riêng vốn có — sự hòa quyện giữa vẻ đẹp cổ truyền và hơi thở hiện đại. Trong khoảnh khắc ấy, Sài Gòn vừa trầm lắng, vừa ấm áp tình thân.
+                </p>
+            </div>
+        </section>
+        <section class="quote">
+            <div class="container">
+                <div class="quote_content">
+                    <p class="quote_heading">Sài Gòn không chỉ là trung tâm kinh tế năng động của cả nước, mà còn là nơi lưu giữ và lan tỏa những giá trị văn hóa, truyền thống và tinh thần đoàn kết, đặc biệt rực rỡ và ấm áp mỗi độ Tết đến xuân về.</p>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="footer_copyright">
+                <p class="footer_copyright-text">© 2026 Tết Sài Gòn | Làm bởi Nguyễn Trọng Phúc </p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
