@@ -347,9 +347,9 @@ a{
     }
     /* ===== HERO ===== */
     .hero{
-        background-attachment: scroll; /* tránh lag mobile */
-        padding: 120px 20px 60px;
-        max-height:50vh;
+        background-attachment: scroll;
+        padding-top:120px;
+        min-height:80vh;
     }
 
     .hero_heading{
@@ -462,4 +462,5 @@ a{
     
 
 }
+
 
