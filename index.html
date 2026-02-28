@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/reset/reset.css">
+    <link rel="stylesheet" href="./asset/css/styleHome.css">
+    <title>Tết đến rồi</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <a class="logo_images" href="./index.html">
+                    <img src="./img/hoaMai.png" alt="hoa-mai" class="logo"> 
+                    <div class="text">
+                        <span class="logo_text">Tết</span>
+                        <span class="logo_text_secondary">đến rồi</span>
+                    </div>
+                </a>
+                <nav class="navbar">
+                    <ul class="navbar_list" id="navbar_list--pc">
+                        <li class="navbar_item"><a href="./index.html" class="navbar_link navbar_link--active">Trang chủ</a></li>
+                        <li class="navbar_item"><a href="./queHuong.html" class="navbar_link">Quê hương</a></li>
+                        <li class="navbar_item"><a href="./phongTuc.html" class="navbar_link">Phong tục</a></li>
+                        <li class="navbar_item"><a href="./amThuc.html" class="navbar_link">Ẩm thực</a></li>
+                        <li class="navbar_item"><a href="./vanHoa.html" class="navbar_link">Văn hóa</a></li>
+                        <li class="navbar_item"><a href="./hinhAnhVideo.html" class="navbar_link">Ảnh & Video</a></li>
+                        <li class="navbar_item"><a href="./kyUc.html" class="navbar_link">Ký ức</a></li>
+                        <li class="navbar_item"><a href="./lienHe.html" class="navbar_link">Liên hệ</a></li>
+                    </ul>
+                </nav>
+            </div>            
+        </div>
+        <div class="mobile-header">
+            <input type="checkbox" name="menu-checkbox" id="menu-checkbox" class="menu-checkbox" hidden>
+            <label for="menu-checkbox">
+                <svg class="menu-header_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" >
+                    <path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+            </label>
+            <label for="menu-checkbox" class="menu-overplay"></label>
+            <div class="menu-drawer">
+                <div class="menu-drawer_top">
+                    <a class="logo_images" href="./index.html">
+                        <img src="./img/hoaMai.png" alt="hoa-mai" class="logo"> 
+                        <div class="text">
+                            <span class="logo_text">Tết</span>
+                            <span class="logo_text_secondary">đến rồi</span>
+                        </div>
+                    </a>
+                    <label for="menu-checkbox">
+                        <svg class="close_menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path fill="currentColor" d="M55.1 73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L147.2 256 9.9 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192.5 301.3 329.9 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.8 256 375.1 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192.5 210.7 55.1 73.4z"/></svg>
+                    </label>
+                </div>
+                <ul id="navbar_list--mobile"></ul>
+                <script>
+                    const navPC=document.querySelector("#navbar_list--pc");
+                    const navMobile=document.querySelector("#navbar_list--mobile");
+                    navMobile.innerHTML=navPC.innerHTML;
+                </script>
+            </div>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero_heading">Tết Sài Gòn</h1>
+            <p class="hero_desc">Xuân Sài Gòn - Nét xưa còn mãi, sắc mới thêm tươi</p>
+            <a href="" class="btn btn_hero">Khám phá ngay</a>
+        </div>
+    </section>
+    <main>
+        <section class="introduce_short">
+            <div class="container">                
+                <div class="intro_content">  
+                    <div class="intro">
+                        <h1 class="section_heading">Tết thành phố Hồ Chí Minh - Xuân Sài Gòn</h1>
+                        <p class="section_desc">Tết ở Thành phố Hồ Chí Minh mang sắc màu rực rỡ và không khí nhộn nhịp đặc trưng của một đô thị sôi động. Những ngày cuối năm, đường phố được trang hoàng lộng lẫy, đặc biệt là khu vực Phố đi bộ Nguyễn Huệ với đường hoa xuân thu hút đông đảo người dân du xuân, chụp ảnh. Dù cuộc sống thường ngày hối hả, dịp Tết khiến Sài Gòn chậm lại, ấm áp hơn với những buổi sum họp gia đình và khoảnh khắc giao thừa đầy háo hức.</p>
+                    </div>              
+                    <img src="./img/saiGon.jpg" alt="sai-gon-gioi-thieu" class="intro_img">
+                </div>
+            </div>
+        </section>
+        <section class="featured">
+            <div class="container">
+                <h1 class="section_heading">Những điểm nổi bật ở tết Sài Gòn</h1>
+                <div class="featured_list">
+                    <section class="featured-item">
+                        <img src="./img/dinhPhongPhu.png" alt="dinh-Phong-Phu" class="featured-item_img">
+                        <h3 class="featured-item_heading">Đình Phong Phú</h3>
+                        <p class="featured-item_desc">Di tích lịch sử - văn học cách mạng cấp quốc gia.</p>
+                        <a href="./queHuong.html" class="btn featured-item_more">Khám phá thêm</a>
+                    </section>
+                    <section class="featured-item">
+                        <img src="./img/ongTao.png" alt="ong-Tao" class="featured-item_img">
+                        <h3 class="featured-item_heading">Ông táo</h3>
+                        <p class="featured-item_desc">Phong tục tín ngưỡng đẹp đẽ của người Việt.</p>
+                        <a href="./phongTuc.html" class="btn featured-item_more">Khám phá thêm</a>
+                    </section>
+                    <section class="featured-item">
+                        <img src="./img/banhTet.png" alt="banh-tet" class="featured-item_img">
+                        <h3 class="featured-item_heading">Bánh tét</h3>
+                        <p class="featured-item_desc">Món ăn được xem là "linh hồn Tết".</p>
+                        <a href="./amThuc.html" class="btn featured-item_more">Khám phá thêm</a>
+                    </section>
+                    <section class="featured-item">
+                        <img src="./img/lixi.png" alt="li-xi" class="featured-item_img">
+                        <h3 class="featured-item_heading">Lì xì</h3>
+                        <p class="featured-item_desc">Tiền mừng tuổi, cũng được xem là tiền lộc cho đầu năm.</p>
+                        <a href="./phongTuc.html" class="btn featured-item_more">Khám phá thêm</a>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <section class="quote">
+            <div class="container">
+                <div class="quote_content">
+                    <h1 class="quote_heading">Về Thành phố Hồ Chí Minh ăn Tết, dạo Chợ Bến Thành, ngắm mai vàng trước hiên nhà, thưởng trà xuân – bánh tét xanh… giữa nhịp phố hiện đại mà vẫn đượm hồn xưa, mới hay Tết Sài Gòn dung dị mà thanh tân đến vậy.</h1>
+                    <p class="quote_desc">--Người con Sài Gòn--</p>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="footer_copyright">
+                <p class="footer_copyright-text">© 2026 Tết Sài Gòn | Làm bởi Nguyễn Trọng Phúc </p>
+            </div>
+        </section>
+    </main>
+   
+</body>
+</html>
